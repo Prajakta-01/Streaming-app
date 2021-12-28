@@ -33,7 +33,7 @@ router.post("/register", async (req, res) => {
          const accessToken = jwt.sign(
           { id: user._id, isAdmin: user.isAdmin },
           process.env.SECRET_KEY,
-          { expiresIn: "5d" }
+          { expiresIn: "25d" }
         );
 
 
